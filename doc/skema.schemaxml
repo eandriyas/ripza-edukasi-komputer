@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemadesigner version="6.5">
+<source>
+<database charset="latin1" collation="latin1_swedish_ci">ripza</database>
+</source>
+<canvas zoom="100">
+<tables>
+<table name="admin" view="standard">
+<left>37</left>
+<top>50</top>
+<width>200</width>
+<height>126</height>
+<sql_create_table>CREATE TABLE `admin` (
+  `id_admin` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `last_login` datetime DEFAULT NULL,
+  PRIMARY KEY (`id_admin`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1</sql_create_table>
+</table>
+<table name="pemasukan" view="standard">
+<left>506</left>
+<top>187</top>
+<width>226</width>
+<height>126</height>
+<sql_create_table>CREATE TABLE `pemasukan` (
+  `id_pemasukan` int(11) NOT NULL AUTO_INCREMENT,
+  `pemasukan` varchar(255) DEFAULT NULL,
+  `nominal` int(100) DEFAULT NULL,
+  `keterangan` text,
+  PRIMARY KEY (`id_pemasukan`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1</sql_create_table>
+</table>
+<table name="pengeluaran" view="standard">
+<left>504</left>
+<top>41</top>
+<width>231</width>
+<height>126</height>
+<sql_create_table>CREATE TABLE `pengeluaran` (
+  `id_pengeluaran` int(11) NOT NULL AUTO_INCREMENT,
+  `pengeluaran` varchar(255) DEFAULT NULL,
+  `nominal` int(100) DEFAULT NULL,
+  `keterangan` text,
+  PRIMARY KEY (`id_pengeluaran`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1</sql_create_table>
+</table>
+<table name="voucher" view="standard">
+<left>33</left>
+<top>183</top>
+<width>206</width>
+<height>142</height>
+<sql_create_table>CREATE TABLE `voucher` (
+  `id_voucher` int(11) NOT NULL AUTO_INCREMENT,
+  `voucher` varchar(255) DEFAULT NULL,
+  `date` datetime DEFAULT NULL,
+  `jenis` varchar(255) DEFAULT NULL,
+  `nilai` int(100) DEFAULT NULL,
+  PRIMARY KEY (`id_voucher`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1</sql_create_table>
+</table>
+</tables>
+</canvas>
+</schemadesigner>

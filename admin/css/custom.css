@@ -1,0 +1,26 @@
+.voucher {
+    border-top: 16px solid #000;
+    /* border-bottom: 16px solid #000; */
+}
+.voucher h3 {
+    background: #000;
+    margin-top: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 1%;
+    color: #fff;
+    padding-left: 5%;
+}
+img.img-voucher {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+.voucher h4 {
+    border-bottom: 1px solid #999;
+    padding-bottom: 2%;
+}
+.active-drop{
+    background: rgba(8, 8, 8, 0.39);
+}

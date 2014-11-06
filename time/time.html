@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="css/bootstrap-combined.min.css" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" media="screen"
+            href="css/bootstrap-datetimepicker.min.css">
+        </head>
+        <body>
+            <div class="well">
+                <div id="datetimepicker3" class="input-append">
+                    <input data-format="hh:mm:ss" type="text"></input>
+                    <span class="add-on">
+                    <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+                    </i>
+                    </span>
+                </div>
+            </div><br>
+            <div id="datetimepicker" class="input-append date">
+                <input type="text"></input>
+                <span class="add-on">
+                <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+                </span>
+            </div>
+            <script type="text/javascript"
+            src="js/jquery-1.11.1.min.js">
+            </script>
+            <script type="text/javascript"
+            src="js/bootstrap.min.js">
+            </script>
+            <script type="text/javascript"
+            src="js/bootstrap-datetimepicker.min.js">
+            </script>
+            <script type="text/javascript">
+            $('#datetimepicker').datetimepicker({
+            format: 'dd/MM/yyyy hh:mm:ss',
+            language: 'ind'
+            });
+            </script>
+            <script type="text/javascript">
+            $(function() {
+            $('#datetimepicker3').datetimepicker({
+            pickDate: false
+            });
+            });
+            </script>
+        </body>
+        <html>
